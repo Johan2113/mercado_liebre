@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mercado Liebre Colombia</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./normalize.css">
+    <link rel="stylesheet" href="../public/css/syle.css">
+    <script src="https://kit.fontawesome.com/e5918ee975.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header class="main-header">
+        <div class="main-header-top-bar">
+            <img src="../public/images/logo-mercado-liebre.svg" class="logo">
+            <!-- <div class="form" action="#" method="GET">
+                <div class="input">Buscar productos, marcas y más</div>
+                <div class="submit"><i class="fa fa-search"></i></div>
+            </div> -->
+            <h2 class = "copy-header"><i class="fa-solid fa-hand-holding-dollar"></i> Comprá en cuotas y sin tarjeta de crédito</h2> 
+        </div>
+         
+        <a href="#" class="hamburguer-button"><i class="fa-solid fa-bars"></i>
+        </a>
+        <nav class= "main-navbar">
+           <ul class="left-navbar">
+            <li><a href="#">Ofertas</a></li>
+            <li><a href="#">Tiendas Oficiales</a></li>
+            <li><a href="#">Vender</a></li>
+            <li><a href="#">Ayuda</a></li>
+        </ul>
+        <ul class="right-navbar">
+          <li><a href="./register.html">Creá tu cuenta <i class="fa-solid fa-credit-card"></i></a></li>
+          <li><a href="./login.html">Ingresá  <i class="fas fa-sign-in-alt"></i></a></a></li>
+          <li><a href="#">Mis compras  <i class="fas fa-shopping-basket"></i></a></li>
+         </ul>
+        </nav>
+    </header>
+
+    <!-- formulario -->
+    <form action="/crear producto" method="post" class="create-form">
+        <div class="control-formulario">
+            <label>Nombre del producto</label>
+            <input type="text" name="nombre" placeholder="ingresa el producto" class="control">
+        </div>
+        <div class="control-formulario">
+            <label>Precio:</label>
+            <input type="text" name="precio" placeholder="123.56" class="control">
+        </div>
+        <div class="control-formulario">
+            <label>Categoria </label>
+            <select name="categoria" class="control">
+            <option value="hogar">Hogar</option>
+            <option value="electro">Electro</option>
+            <option value="indumentaria">Indumentaria</option>
+            </select>
+        </div>
+
+        <div class="control-formulario">
+            <label>Esta es una oferta</label>
+        <div class="selector">
+            <input type="radio" name="enOferta">
+            <label>Si</label>
+            <input type="radio" name="enOferta">
+            <label>No</label>
+        </div> 
+            
+        </div>
+        <div class="control-formulario">
+            <label>Descripcion:</label>
+            <textarea name="descripcion" class="control"></textarea>
+        </div>
+        <button type="reset" class="boton-formulario" >Borrar</button>  
+        <button type="submit" class="boton-formulario">Guardar</button>
+
+
+
+
+
+    </form>
+    
+</body>
+<html>

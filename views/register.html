@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mercado Liebre Colombia</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./normalize.css">
+    <link rel="stylesheet" href="../public/css/syle.css">
+    <script src="https://kit.fontawesome.com/e5918ee975.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header class="main-header">
+        <div class="main-header-top-bar">
+            <img src="../public/images/logo-mercado-liebre.svg" class="logo">
+            <!-- <div class="form" action="#" method="GET">
+                <div class="input">Buscar productos, marcas y más</div>
+                <div class="submit"><i class="fa fa-search"></i></div>
+            </div> -->
+            <h2 class = "copy-header"><i class="fa-solid fa-hand-holding-dollar"></i> Comprá en cuotas y sin tarjeta de crédito</h2> 
+        </div>
+         
+        <a href="#" class="hamburguer-button"><i class="fa-solid fa-bars"></i>
+        </a>
+        <nav class= "main-navbar">
+           <ul class="left-navbar">
+            <li><a href="./home.html">Ofertas</a></li>
+            <li><a href="#">Tiendas Oficiales</a></li>
+            <li><a href="./producto.html">Vender</a></li>
+            <li><a href="#">Ayuda</a></li>
+        </ul>
+        <ul class="right-navbar">
+          <li><a href="./register.html">Creá tu cuenta <i class="fa-solid fa-credit-card"></i></a></li>
+          <li><a href="./login.html">Ingresá  <i class="fas fa-sign-in-alt"></i></a></a></li>
+          <li><a href="#">Mis compras  <i class="fas fa-shopping-basket"></i></a></li>
+         </ul>
+        </nav>
+    </header>
+    <main class="register">
+        <form action="/" method="POST">
+            <br>
+            <input type="text" name="name" placeholder="Nombre y apellido">
+            
+            <input type="text" name="user" placeholder="Nombre de usuario">
+            
+            <input type="email" name="email" placeholder="E-mail">
+            <br>
+            <br>
+            <label for="birth_date"><b>Fecha de nacimiento</b></label>
+            <br>
+            <br>
+            <input type="date" name="birth_date" id="birth_date">
+            <br>
+            <br>
+            <input type="text" name="addres" placeholder="Domicilio">
+            <h4>Perfil del usuario</h4>
+            <div class="profile">
+                <input type="radio" name="profile" value="buy" id="buy">
+                <label for="buy">Comprador</label>
+                <input type="radio" name="profile" value="sell" id="sell">
+                <label for="sell">Vendedor</label>
+            </div>
+
+            <h4>Intereses</h4>
+            <div class="interests">
+                <div>
+                    <input type="checkbox" name="interests" value="a" id="a">
+                    <label for="a">Electro</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="interests" value="b" id="b">
+                    <label for="b">Moda</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="interests" value="c" id="c">
+                    <label for="c">Hogar</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="interests" value="d" id="d">
+                    <label for="d">Juguetería</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="interests" value="e" id="e">
+                    <label for="e">Vida sana</label>
+                </div>
+            </div>
+            
+            <h4>Elegí tu foto de usuario</h4>
+            <input type="file" name="avatar">
+            <br>
+            <br>
+            <input type="password" name="pass" placeholder="Elegí tu contraseña">
+            <input type="password" name="pass_confirm" placeholder="Confirmá tu contraseña">
+            <br>
+            <br>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Borrar">
+            <br>
+            <br>
+        </form>
+    </main>
+
+</body>
+</html>
